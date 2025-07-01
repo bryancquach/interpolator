@@ -82,7 +82,7 @@ Although the current implementation has the advantages of modularity, one potent
 I also note below several additional enhancements to the code and software development process that I would consider implementing if more time allowed.
 
 * The current implementation does not resolve adjacent missing values and has incomplete unit tests that I would prioritize finishing.
-* Use of Python's built-in Abstract Base Classes (`abc`) module to enforce the interface contract. The current implementation is an informal interface that can provide guidance for developers but lacks enforcement of constraints.
+* Use of Python's built-in Abstract Base Classes (`abc`) module to enforce the interface contract. The current implementation is an informal interface that can provide guidance for developers but lacks enforcement of constraints. Alternatively, factory and decorator design patterns can be used for an elegant implementation of all three stages that allows for clean management of object creation and customization.
 * Addition of a Dockerfile and Docker image to provide a portable environment for the tool that promotes consistency and reproducibility. It can also promote scalability and parallelization in serverless cloud computing setups.
 * Implement CI/CD concepts through GitHub actions and cloud services to:
   * Autobuild updated Docker images when Dockerfiles are updated
