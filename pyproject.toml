@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interpolation"
+authors = [
+  {name = "Bryan Quach", email = "bryancquach@gmail.com"},
+]
+description = "A package to interpolate missing values in tabular data."
+requires-python = ">=3.9"
+dependencies = [
+  "pytest>=8.4",
+  "numpy>=2.0.2",
+  "pandas>=2.3",
+  "argparse>=1.4",
+]
+version = "0.1"
+
+[project.scripts]
+interpolate = "interpolate.main:main"
